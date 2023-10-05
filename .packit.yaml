@@ -13,8 +13,15 @@ upstream_package_name: duh
 # downstream (Fedora) RPM package name
 downstream_package_name: duh
 
+
+
 jobs:
     - job: copr_build
       trigger: pull_request
+      owner: alexsaezm
+      project: duh
       targets:
-        - fedora-all
+        - fedora-eln-aarch64
+        - fedora-eln-ppc64le
+        - fedora-eln-s390x
+        - fedora-eln-x86_64

@@ -14,7 +14,7 @@ Duh is a dummy Go library that I use for testing Fedora's package system.}
 %global godocs          README.md
 
 Name:           duh
-Release:        1%{?dist}
+Release:        %autorelease
 Summary:        A dummy library
 
 # Upstream license specification: BSD-3-Clause
@@ -41,6 +41,4 @@ Source0:        %{gosource}
 %gopkgfiles
 
 %changelog
-* Fri May 14 10:52:47 CEST 2021 Álex Sáez <alexsaezm@gmail.com> - 1.0-1
-- Initial package
-
+%autochangelog
